@@ -313,7 +313,8 @@
 
             loader.style.display = "block";
 
-            const response = await fetch(`https://birthday-book-1.onrender.com/birthday?date=${inputDate}`);
+            const response = await fetch(`/birthday?date=${inputDate}`);
+
 
             const data = await response.json();
             loader.style.display = "none"
