@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400..700&family=Cookie&family=DynaPuff:wdth@79.8&family=Engagement&family=Hind+Siliguri:wght@300;400;500;600;700&family=Imperial+Script&family=Noto+Sans+SC:wght@100..900&family=Oswald:wght@200..700&family=Rouge+Script&family=Updock&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400..700&family=Cookie&family=DynaPuff:wdth@79.8&family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+     <link rel="stylesheet" href="style.css">    
+    
+</head>
+
+<body>
+
+    <div class="birthBox">
+
+
+        <div class="heading cookie-regular">
+            🎂BirthdayBook
+
+        </div>
+        <div class="mainLine cookie-regular ">
+            BirthdayBook returns you comprehensive information about any birthdate including
+            day of the week, zodiac signs, famous people born on the same day, & much more!
+        </div>
+
+        <div class="inputDate">
+            Enter your Birthdate:
+            <br>
+            <input type="date" class="date" id="birthDate">
+            <button class="try">Try</button>
+            <br>
+            <span class="eg">Try: 05-12-1984,&nbsp25-05-2007,&nbsp02-04-1972 (leap year)</span>
+        </div>
+        <div class="content">
+
+
+            <div class="result">
+                <div id="loader">⏳Fetching Details....</div>
+                📅<span class="fullDate"><span class="d">Thursday</span>, <span class="dd">December</span> <span
+                        class="ddd">04</span>, <span class="dddd"> 2025</span></span>
+
+                <div class="firstRow">
+
+                    <div class="boxes">
+                        <span class="weekDay">Thursday</span>
+                        <span class="weekHead">Day of the week</span>
+
+                    </div>
+                    <div class="boxes">
+                        <span class="ageHead">Age</span>
+                        <span class="age">0</span>
+                        <span class="generation">Generation</span>
+
+
+                    </div>
+                    <div class="boxes">
+                        <div class="b">
+                            <span class="nextBirth">0</span><span class="days">Days</span>
+                        </div>
+
+                        <span class="nextBirthHead">Next Birthday</span>
+
+
+                    </div>
+                    <div class="boxes">
+
+                        <span class="daysAlive">0</span>
+                        <span class="daysAliveHead">Days Alive</span>
+                    </div>
+
+                </div>
+                <div class="secondRow">
+
+                    <div class="boxes2">
+
+                        <span class="weeksAliveHead">Weeks Alive</span>
+                        <span class="weeksAlive">0</span>
+                    </div>
+                    <div class="boxes2">
+                        <span class="monthsAliveHead">Months Alive</span>
+                        <span class="monthsAlive">0</span>
+                    </div>
+                    <div class="boxes2">
+                        <span class="hoursAliveHead">Hours Alive</span>
+                        <span class="hoursAlive">0</span>
+                    </div>
+                    <div class="boxes2">
+                        <span class="minutesAliveHead">Minutes Alive</span>
+                        <span class="minutesAlive">0</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="signs">
+
+                <div class="thirdRow">
+                    <div class="boxes3">
+
+                        <div class="western imperial-script-regular  ">
+                            <span class="westernSymbol">♊</span>
+                            <span class="westernHead">Western Zodiac</span>
+                        </div>
+                        <div class="sign">
+                            <span class="westernSignHead">Sign:&nbsp</span> <span class="westernSign"></span>
+                        </div>
+                        <div>
+                            <span class="westernElementHead">Element: </span><span class="westernElement"></span>
+                        </div>
+                    </div>
+                    <div class="boxes3">
+
+                        <div class="chinese imperial-script-regular ">
+                            <span class="chineseSymbol">🐍</span>
+                            <span class="chineseHead">Chinese Zodiac</span>
+                        </div>
+                        <div class="sign">
+                            <span class="chineseSignHead">Animal:&nbsp</span> <span class="chineseSign">-</span>
+                        </div>
+                        <div>
+                            <span class="chineseElementHead">Element: </span><span class="chineseElement">-</span>
+                            <br>
+                            <span class="chineseDescription"></span>
+                        </div>
+
+                    </div>
+                    <div class="boxes3">
+
+                        <div class="birth imperial-script-regular ">
+                            <span class="birthSymbol">💎</span>
+                            <span class="birthHead">Birth &nbspStone</span>
+                        </div>
+                        <div class="sign">
+                            <span class="birthSignHead">Stone:&nbsp</span><span class="birthSign">-</span>
+                        </div>
+                        <div>
+                            <span class="birthElementHead">Color: </span><span class="birthElement">-</span>
+                            <br>
+                            <span class="birthDescription"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="famous">
+                👨‍👨 Famous People Born on this Day:
+                <div class="peopleBox">
+
+                    <div class="person">
+                        <span class="personName">Nocoolas</span>
+                        <span class="personYear">2025</span>
+                    </div>
+
+                    <span class="personDescription">Cameron Anthony Ward is an American professional football
+                        quarterback for the Tennessee Titans of the National Football League (NFL). He played
+                        colleg</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        const dayofWeek = document.querySelector('.d');
+        const dayWeek = document.querySelector('.weekDay')
+        const month = document.querySelector('.dd');
+        const date = document.querySelector('.ddd');
+        const year = document.querySelector('.dddd');
+
+        const todayDate = new Date();
+
+        if (todayDate.getDay() == 1) {
+            dayofWeek.innerText = 'Monday'
+            dayWeek.innerText = 'Monday'
+        }
+        if (todayDate.getDay() == 2) {
+            dayofWeek.innerText = 'Tuesday'
+            dayWeek.innerText = 'Tuesday'
+        }
+        if (todayDate.getDay() == 3) {
+            dayofWeek.innerText = 'Wednesday'
+            dayWeek.innerText = 'Wednesday'
+        }
+        if (todayDate.getDay() == 4) {
+            dayofWeek.innerText = 'Thursday'
+            dayWeek.innerText = 'Thursday'
+        }
+        if (todayDate.getDay() == 5) {
+            dayofWeek.innerText = 'Friday'
+            dayWeek.innerText = 'Friday'
+        }
+        if (todayDate.getDay() == 6) {
+            dayofWeek.innerText = 'Saturday'
+            dayWeek.innerText = 'Saturday'
+        }
+        if (todayDate.getDay() == 0) {
+            dayofWeek.innerText = 'Sunday'
+            dayWeek.innerText = 'Sunday'
+        }
+
+        if (todayDate.getMonth() + 1 == 1) {
+            month.innerText = 'January'
+        }
+        if (todayDate.getMonth() + 1 == 2) {
+            month.innerText = 'February'
+        }
+        if (todayDate.getMonth() + 1 == 3) {
+            month.innerText = 'March'
+        }
+        if (todayDate.getMonth() + 1 == 4) {
+            month.innerText = 'April'
+        }
+        if (todayDate.getMonth() + 1 == 5) {
+            month.innerText = 'May'
+        }
+        if (todayDate.getMonth() + 1 == 6) {
+            month.innerText = 'June'
+        }
+        if (todayDate.getMonth() + 1 == 7) {
+            month.innerText = 'July'
+        }
+        if (todayDate.getMonth() + 1 == 8) {
+            month.innerText = 'August'
+        }
+        if (todayDate.getMonth() + 1 == 9) {
+            month.innerText = 'September'
+        }
+        if (todayDate.getMonth() + 1 == 10) {
+            month.innerText = 'October'
+        }
+        if (todayDate.getMonth() + 1 == 11) {
+            month.innerText = 'November'
+        }
+        if (todayDate.getMonth() + 1 == 12) {
+            month.innerText = 'December'
+        }
+
+        date.innerText = todayDate.getDate();
+        year.innerText = todayDate.getFullYear();
+
+
+
+        const fullDate = document.querySelector('.fullDate');
+        const age = document.querySelector('.age');
+        const generation = document.querySelector('.generation');
+        const nextBirth = document.querySelector('.nextBirth');
+        const daysAlive = document.querySelector(".daysAlive");
+        const weeksAlive = document.querySelector('.weeksAlive');
+        const monthsAlive = document.querySelector('.monthsAlive');
+        const hoursAlive = document.querySelector('.hoursAlive');
+        const minutesAlive = document.querySelector('.minutesAlive');
+
+        const westernSymbol = document.querySelector('.westernSymbol');
+        const westernElement = document.querySelector('.westernElement');
+        const westernSign = document.querySelector('.westernSign');
+
+        const chineseElement = document.querySelector('.chineseElement');
+        const chineseSign = document.querySelector('.chineseSign');
+        const chineseDescription = document.querySelector('.chineseDescription')
+
+        const birthElement = document.querySelector('.birthElement');
+        const birthSign = document.querySelector('.birthSign');
+        const birthDescription = document.querySelector('.birthDescription')
+
+        const loader = document.getElementById('loader')
+
+        const tryBtn = document.querySelector('.try');
+        tryBtn.addEventListener('click', () => {
+            getSomething();
+        })
+
+
+        const getSomething = async () => {
+            const inputDate = document.getElementById("birthDate").value;
+
+            if (!inputDate) {
+                alert("Please select a date");
+                return;
+            }
+
+            const selectedDate = new Date(inputDate);
+            const today = new Date();
+
+            today.setHours(0, 0, 0, 0);
+            selectedDate.setHours(0, 0, 0, 0);
+
+            if (selectedDate > today) {
+                alert('BirthDate cannot be in future!');
+                return;
+            }
+
+
+            loader.style.display = "block";
+
+            const response = await fetch(
+                `http://localhost:3000/birthday?date=${inputDate}`
+                // `http://localhost:3000/birthday?date=2007-05-25`
+            );
+
+
+            const data = await response.json();
+            loader.style.display = "none"
+
+
+            fullDate.innerHTML = data.date.formatted
+            dayWeek.innerText = data.date.dayOfWeek
+            age.innerText = data.age.years;
+            generation.innerText = `${data.age.generation}`
+            nextBirth.innerText = data.age.nextBirthdayIn;
+            daysAlive.innerText = data.numbers.daysAlive
+            weeksAlive.innerText = data.numbers.weeksAlive
+            monthsAlive.innerText = data.numbers.monthsAlive
+            hoursAlive.innerText = data.numbers.hoursAlive
+            minutesAlive.innerText = data.numbers.minutesAlive
+
+            westernSymbol.innerText = data.zodiac.western.symbol;
+            westernSign.innerText = data.zodiac.western.sign;
+            westernElement.innerText = data.zodiac.western.element;
+
+            chineseSign.innerText = data.zodiac.chinese.animal;
+            chineseElement.innerText = data.zodiac.chinese.element;
+            chineseDescription.innerText = data.zodiac.chinese.traits;
+
+            birthSign.innerText = data.birthstone.name;
+            birthElement.innerText = data.birthstone.color;
+            birthDescription.innerText = data.birthstone.meaning;
+
+
+            document.querySelectorAll('.peopleBox').forEach((box) => {
+                box.remove();
+            })
+
+            famousPeople(data.famousBirthdays);
+            printAPI(JSON.stringify(data, null, 2));
+            // JSON.stringify(data)
+            console.log(data)
+
+        };
+
+        function famousPeople(arr) {
+            const famousBox = document.querySelector('.famous');
+            famousBox.style.display = 'block'
+
+            for (let i = 0; i < arr.length; i++) {
+
+                const peoples = document.createElement('div');
+                peoples.classList.add('peopleBox');
+
+                const person1 = document.createElement('div');
+                person1.classList.add('person');
+
+                const s1 = document.createElement('span');
+                s1.classList.add('personName');
+                s1.innerText = arr[i].name;
+
+                const s2 = document.createElement('span');
+                s2.classList.add('personYear');
+                s2.innerText = arr[i].year;
+
+                const s3 = document.createElement('span');
+                s3.classList.add('personDescription');
+                s3.innerText = arr[i].description
+
+
+                person1.appendChild(s1);
+                person1.appendChild(s2);
+                peoples.appendChild(person1);
+                peoples.appendChild(s3);
+                famousBox.appendChild(peoples);
+            }
+
+        }
+
+        function printAPI(data) {
+            document.querySelector('.apiBox').style.display = 'block'
+            const apiResponse = document.querySelector('.apiResponse');
+            apiResponse.innerText = data
+        }
+
+        const copyBtn = document.querySelector('.copy');
+        const apiResponse = document.querySelector('.apiResponse')
+
+    </script>
+
+</body>
+
+</html>
