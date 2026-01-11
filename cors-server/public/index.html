@@ -300,15 +300,17 @@
             }
 
             const selectedDate = new Date(inputDate);
-            const today = new Date();
+const today = new Date();
 
-            today.setHours(0, 0, 0, 0);
-            selectedDate.setHours(0, 0, 0, 0);
+// Remove time part for comparison
+today.setHours(0, 0, 0, 0);
+selectedDate.setHours(0, 0, 0, 0);
 
-            if (selectedDate > today) {
-                alert('BirthDate cannot be in future!');
-                return;
-            }
+// Compare timestamps
+if (selectedDate.getTime() > today.getTime()) {
+    alert('BirthDate cannot be in future!');
+    return;
+}
 
 
             loader.style.display = "block";
