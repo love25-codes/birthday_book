@@ -1,4 +1,4 @@
-# 🎂Birthday Book
+# 🎂BirthdayBook
 ### Birthday Book is a web application that provides detailed information about any birthdate.
 ### Just select a date and it instantly shows facts like day of the week, age, zodiac signs, birthstone, famous people born on the same day and much more!
 
